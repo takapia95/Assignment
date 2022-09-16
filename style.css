@@ -1,0 +1,91 @@
+html, body {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.grid-king {
+display: grid;
+     grid-template-areas: 
+       "he he he he"
+       "na ma ma ma"
+       "na ma ma ma" 
+       "fo fo fo fo";
+  gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,auto-fill);
+}
+
+.grid-king > * {
+  background-color: rgba(200,41,97,.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+.header {
+  grid-area: he;
+}
+.main {
+  grid-area: ma;
+}
+.nav {
+  grid-area: na;
+}
+.footer {
+  grid-area: fo;
+}
+
+ol.upper {
+  list-style-type: upper-roman;
+}
+ol.lower {
+  list-style-type: lower-roman;
+}
+a:hover {
+  color: #FF00FF;
+}
+.p1 {
+  background: lightblue;
+}
+.p2{
+  background: lightyellow;
+}
+.p3{
+  background: black;
+  color: white;
+}
+.p4{
+  color: red;
+}
+.custom-counter {
+  counter-reset: section;
+}
+table{
+  font: 1.5rem 'Verdana', sans-serif
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
