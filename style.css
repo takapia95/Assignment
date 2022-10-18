@@ -59,7 +59,7 @@ a:hover {
   counter-reset: section;
 }
 table{
-  font: 1.5rem 'Verdana', sans-serif
+  font: 1.5rem 'Verdana', serif
 }
 .animate-charcter
 {
@@ -88,4 +88,26 @@ table{
   to {
     background-position: 100% center;
   }
+}
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, white);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+.error {
+  background: linear-gradient(
+    to right, 
+    red, 
+    purple
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-size: 150%
 }
