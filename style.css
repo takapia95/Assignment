@@ -6,12 +6,11 @@ html, body {
 .grid-king {
 display: grid;
      grid-template-areas: 
-       "he he he he"
-       "na ma ma ma"
-       "na ma ma ma" 
-       "fo fo fo fo";
+       "he he he"
+       "na ma as"
+       "fo fo fo";
   gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto-fill);
     grid-template-rows: repeat(4,auto-fill);
 }
 
@@ -32,7 +31,9 @@ display: grid;
 .footer {
   grid-area: fo;
 }
-
+.aside {
+  grid-area: as;
+}
 ol.upper {
   list-style-type: upper-roman;
 }
@@ -79,7 +80,7 @@ table{
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 10s linear infinite;
   display: inline-block;
       font-size: 50px;
 }
@@ -110,4 +111,21 @@ input:valid {
   -webkit-text-fill-color: transparent;
   text-align: left;
   font-size: 150%
+}
+@media screen and (max-width: 600px) {
+  body{
+    background-color: #FFEBCD;
+  }
+.grid-king {
+    display: grid;;
+ grid-template-areas: 
+       "he"
+       "na"
+       "ma"
+        "as" 
+       "fo";
+  gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5,auto-fill);
+  }
 }

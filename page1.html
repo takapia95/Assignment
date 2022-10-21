@@ -15,15 +15,15 @@
     </header>
     <nav class="nav">
       <ul>
-        <a href='index.html'> 🏡Home</a> <br>
-        <a href='page1.html'>  Page 1 </a> <br>
-        <a href='page2.html'>  Page 2 </a> <br>
-        <a href='page3.html'>  Page 3 </a> <br>
-        <a href='https://www.columbusstate.edu/'> 🏫 CSU </a><br>
+        <a tabindex="1" href='index.html'> 🏡Home</a> <br>
+        <a tabindex="2" href='page1.html'> Page 1 </a> <br>
+        <a tabindex="3" href='page2.html'> Page 2 </a> <br>
+        <a tabindex="4" href='page3.html'> Page 3 </a> <br>
+        <a tabindex="5 " href='https://www.columbusstate.edu/'> 🏫 CSU </a><br>
       </ul>
     </nav>
     <main class="main">
-      <h1 class="animate-charcter"> <strong> What We Have Leaned </strong></h1>
+      <h1 tabindex="6" class="animate-charcter"> <strong> What We Have Leaned </strong></h1>
 
       <p>At the beginning of the World Wide Web there was only HTML, and web pages were a bit drab compared to what we
         are used to seeing today. Now modern web pages rely on three technologies, which will be the main focus of this
@@ -57,6 +57,11 @@
             called an object oriented language.</li>
         </ol>
     </main>
+    <aside id='text'>
+      <canvas id="myCanvas" width="300" height="200" aria-label="Hello World" role="img" style="border:1px solid #d3d3d3;">
+        Your browser does not support the canvas element.
+      </canvas>
+    </aside>
     <footer class="footer">
       <p>
         Ai Kha Phi Tran <br>
@@ -68,8 +73,9 @@
 
     <script src="script.js"></script>
 
-
-    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>
+      document.getElementsByTagName('div')[0].focus();
+    </script>
 </body>
 
 </html>

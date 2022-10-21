@@ -11,22 +11,25 @@
 <body>
   <div class="grid-king">
     <header class="header">
-      <img src="image/10.png" height="400px">
+      <img src="image/85.jpg" alt="A picture of the orange color" height="400px">
     </header>
     <nav class="nav">
       <ul>
-        <a href='index.html'> 🏡Home</a> <br>
-        <a href='page1.html'>  Page 1 </a> <br>
-        <a href='page2.html'>  Page 2 </a> <br>
-        <a href='page3.html'>  Page 3 </a> <br>
-        <a href='https://www.columbusstate.edu/'> 🏫 CSU </a><br>
+        <a tabindex="1" href='index.html'> 🏡Home</a> <br>
+        <a tabindex="2" href='page1.html'> Page 1 </a> <br>
+        <a tabindex="3" href='page2.html'> Page 2 </a> <br>
+        <a tabindex="4" href='page3.html'> Page 3 </a> <br>
+        <a tabindex="5 " href='https://www.columbusstate.edu/'> 🏫 CSU </a><br>
       </ul>
     </nav>
     <main class="main">
-      <h1 class="animate-charcter"> <strong> WELCOME TO MY PAGE </strong></h1>
+      <h1 tabindex="6" class="animate-charcter"> <strong> WELCOME TO MY PAGE </strong></h1>
       <h6> <i> ❤️️ I love me and I like it ❤️️</i></h6>
       <p>“How you love yourself is how you teach others to love you.” – Rupi Kaur </p>
     </main>
+    <aside>
+      <img tabindex="7" src="image/fish.jpg" height="250px">
+    </aside>
     <footer class="footer">
       <p>
         Ai Kha Phi Tran <br>
@@ -37,9 +40,9 @@
     </footer>
 
     <script src="script.js"></script>
-
-
-    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>
+      document.getElementsByTagName('div')[0].focus();
+    </script>
 </body>
 
-</html>
+</html
